@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shadow.aod">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <application android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        <receiver android:name=".ScreenReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF" />
+            </intent-filter>
+        </receiver>
+        <activity android:name=".AODActivity"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:excludeFromRecents="true"
+                  android:showOnLockScreen="true"
+                  android:turnScreenOn="false" />
+    </application>
+</manifest>

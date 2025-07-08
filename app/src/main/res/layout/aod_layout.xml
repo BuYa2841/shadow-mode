@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/shadow_text"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="SHADOW MODE"
+        android:textColor="#33FFFFFF"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:animation="@anim/pulse" />
+
+    <TextClock
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:layout_gravity="center"
+        android:format24Hour="HH:mm" />
+</FrameLayout>
